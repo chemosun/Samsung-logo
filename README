@@ -1,15 +1,17 @@
-Instructions:
+Instructions/ 说明:
 
 Create a boot image in gimp (480x800 24bit RGB color) and save as "C source code header".
 Edit makebootlogo.cpp to include the path to the newly created "C source code header" file.
+使用软件gimp创建一个启动画面（480x800 24位色RGB），将其保存为“C source code header”，编辑makebootlogo.cpp包含刚创建的C语言头文件。
 
 Run the createLogos.sh script:
-./createLogos.sh
+运行./createLogos.sh
 
 Copy the file into the Kernel's source path:
+复制该文件到内核路径：
 cp logo_rgb24_wvga_portrait_custom.h ../Kernel/drivers/video/samsung/logo_rgb24_wvga_portrait.h
-
+更改成相应文件名
 Compile your kernel as usual.
-
+例常编你的内核
 Look to the dual-binaries branch if you plan on replacing the charge image.
-
+如果你想替换充电图标使用dual-binaries分支
